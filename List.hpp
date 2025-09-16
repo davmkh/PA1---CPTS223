@@ -1,11 +1,22 @@
 #include "header.hpp"
 #include "Node.hpp"
 
-class List {
-    private:
-    Node* head;
+template <typename T, typename U> class List {
+private:
+    Node<T, U>* head;
 
-    public:
-    List();
+public:
+    List(Node* head) {
+        this->head = head;
+    }
+
     ~List();
+
+    // assignment functions
+    void insert(T value, U value2); // -- populate list with commands
+
+    void displayCommands(); // -- display all commands
+    void removeCommand(); // -- remove commands
+ 
 };
+

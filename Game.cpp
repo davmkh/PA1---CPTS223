@@ -31,7 +31,7 @@ int Game::menu() {
             system("pause");
 
             // input rules here
-
+            rules();
             break;
 
         case 2:
